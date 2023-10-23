@@ -1,0 +1,264 @@
+:root {
+    color : #ffb602, #219ebc, #6cdb7d, #a7f726, #f1fafa, 
+    #0c2dea, #2e1ec5, #7a64f7
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Silkscreen', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+
+    @font-face {
+        font-family: pixel;
+        src: url(fonts/pixel_font7/pixel7.ttf);
+    }
+    
+    @font-face {
+        font-family: human;
+        src: url(fonts/human_2/Human.otf);
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+/* NAVBAR START */
+.navbar {
+    display: flex;
+    font-family: 'pixel', sans-serif;
+    padding: 1.4rem 7%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999999;
+    border-bottom: 2px solid rgba(33, 158, 188, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 90%;
+    right: 0;
+   
+}
+
+.navbar-nav {
+    display: flex;
+    margin: 2rem;
+}
+
+.navbar .navbar-nav a{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+.navbar .navbar-logo {
+    display: inline-block;
+    width: 10rem;
+}
+
+.navbar-logo img{
+    padding: 1.4rem 7%;
+    width: 100%;
+}
+
+.navbar-nav .links {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+.navbar-nav .toggle {
+    color: #000;
+    
+}
+
+#hamburger-menu{
+    color: #000;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.navbar-nav .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .navbar-extra{
+    display: flex;
+}
+
+.navbar .navbar-extra a{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+
+.action-btn {
+   background-color: #56dee7;  
+   color: #0a0909;
+   padding: 0.5rem 1rem;
+   border: none;
+   outline: none;
+   border-radius: 20px;
+   font-size: 0.8rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: scale 0.2 ease;
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+/* NAVBAR END */
+
+/* ABOUT SITE */
+/* Gaya untuk content */
+.hero2{
+    width: 100%;
+    margin: 20px 10px 10px;
+    padding: 1.4rem 7%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: whitesmoke;
+}
+
+.content{
+    padding: 0px 20px;
+}
+
+/* Gaya untuk pengaturan form dengan table */
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 5px;
+    text-align: left;
+}
+/* Akhir untuk gaya pengaturan form dengan table */
+
+/* Gaya untuk form */
+.text{
+    width: 300px;
+}
+
+.submit{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 150);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(0, 0, 100);
+    color: whitesmoke;
+}
+
+.submit:active {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+}
+/* ABOUT SITE */
+
+/* FOOTER */
+.footer{
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #56dee7;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+}
+/* FOOTER END */
+
+/* Media Queries */
+@media (max-width: 1366px){
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px){
+    html {
+        font: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        height: 100vh;
+
+    }
+
+    .navbar .navbar-nav.active{
+        display: block;
+        background-color: rgba(187, 187, 187, 0.8);
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        display: block;
+        color: #0a0909;
+        margin: 2rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        transition: 0.5s;
+    }
+
+    footer {
+   
+    }
+
+}
+
+@media (max-width: 450px){
+    html {
+        font: 55%;
+    }
+}
+
+@media (max-width:){
+    html {
+
+    }
+}
